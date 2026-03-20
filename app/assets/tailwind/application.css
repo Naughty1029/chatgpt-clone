@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.message-user-bubble {
+    @apply bg-zinc-200 text-black px-3 py-2 rounded-xl max-w-2xl ml-auto;
+}
+
+.dark .message-user-bubble {
+    @apply bg-zinc-700 text-white;
+}
